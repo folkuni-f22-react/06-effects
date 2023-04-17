@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Timing.css'
 
 const Timing = () => {
@@ -7,11 +7,13 @@ const Timing = () => {
 
 	
 	// Vi behöver ett sätt att bara köra denna kod när komponenten renderas för första gången
-	// setTimeout(() => {
-	// 	console.log('Timing: detta ska bara visas första gången')
-	// 	setCount(c => c + 1)
-	// 	setShowMessage(true)
-	// }, 1000)
+	useEffect(() => {
+		setTimeout(() => {
+			console.log('Timing: detta ska bara visas första gången')
+			setCount(c => c + 1)
+			setShowMessage(true)
+		}, 1000)
+	}, [])
 
 
 
