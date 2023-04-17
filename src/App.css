@@ -1,0 +1,6 @@
+.framed {
+	border: 1px solid black;
+	border-radius: 1em;
+	margin: 1em 0em;
+	padding: 1em;
+}

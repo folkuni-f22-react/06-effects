@@ -32,7 +32,7 @@ const Timing = () => {
 	}
 
 	return (
-		<section className="timing">
+		<section className="timing framed">
 		<button onClick={handleClick}> Visa tidsbegränsat meddelande </button>
 		<p> Count: {count} </p>
 		{showMessage && <p> Just nu: super-rabatt på barnkläder! </p>}
